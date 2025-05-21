@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+i {
+  font-family: IconFont, serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "IconFont";
+  src: url("../assets/fonts/fa-light-300.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fa-light-300.woff2") format("woff2"), url("../assets/fonts/fa-light-300.woff") format("woff"), url("../assets/fonts/fa-light-300.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+.base {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001833 !important;
+  color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+}
+
+.polygonX {
+  position: fixed !important;
+  content: "";
+  border: none;
+  opacity: 0.9;
+  top: 10%;
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  transform: rotateZ(25deg);
+  background: linear-gradient(25deg, #00ffed, #9d00c6);
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.polygonV {
+  position: fixed !important;
+  content: "";
+  border: none;
+  opacity: 0.9;
+  right: 10%;
+  bottom: 10%;
+  width: 100px;
+  height: 100px;
+  transform: rotateZ(-25deg);
+  background: linear-gradient(-25deg, #9d00c6, #00ffed);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.polygonS {
+  position: fixed !important;
+  content: "";
+  border: none;
+  opacity: 0.9;
+  left: 10%;
+  bottom: 10%;
+  width: 100px;
+  height: 100px;
+  transform: rotateZ(15deg);
+  background: linear-gradient(15deg, #0afb60, #1eadf0);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.polygonC {
+  position: fixed !important;
+  content: "";
+  border: none;
+  opacity: 0.9;
+  right: 10%;
+  top: 10%;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(#1eadf0, #0afb60);
+  clip-path: circle(50% at 50% 50%);
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.card-main {
+  position: absolute;
+  width: 40%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  z-index: 2;
+  user-select: none;
+  overflow: hidden;
+}
+
+.card-main a#rfc9110-url {
+  font-size: 0.8rem;
+  color: #E60012;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
+
+.content .errorNumber {
+  font-size: 7rem;
+}
+.content .errorNumber i.fa-times {
+  color: #0072CE;
+}
+.content .error-description-wrap {
+  display: block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-size: 1.2rem !important;
+  text-align: center;
+}
+.content .sgs_back_home {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.content .link {
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.content p:nth-child(2) i {
+  color: #00A651;
+}
+
+.content p:nth-child(3) i {
+  color: #E60012;
+}
+
+.content p:nth-child(4) i {
+  color: #F39800;
+}
+
+@media (max-width: 300px) {
+  .errorNumber {
+    font-size: 4em !important;
+  }
+}
+@media (max-width: 412px) {
+  .errorNumber {
+    font-size: 6em !important;
+  }
+}
+@media (max-width: 650px) {
+  .starwars-quote {
+    visibility: hidden !important;
+  }
+}
+@media (max-width: 768px) {
+  .polygonC, .polygonS {
+    visibility: hidden;
+  }
+  .card-main {
+    width: 90%;
+  }
+  .content {
+    padding: 5px;
+  }
+  .errorNumber {
+    font-size: 6em !important;
+  }
+  .content p {
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
