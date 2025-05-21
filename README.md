@@ -54,11 +54,14 @@ An advanced e-commerce web application for **SoftGeek**, built with modern techn
 ## ⚙️ Requirements
 
 - PHP >= 8.4
-- Composer
-- Node.js + NPM
-- MariaDB >= 10.5
-- Memcached
-- Web server (Caddy, Nginx, or Apache)
+- CakePHP >= 5.2
+- Composer >= 2.8.0
+- Node.js + NPM >= 22.15.1
+- MariaDB >= 11.7.2
+- Memcached >= 1.6.38
+- Nginx >= 1.28
+- webpack >= 5
+- SASS >= 1.89.0
 
 ---
 
