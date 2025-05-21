@@ -157,6 +157,7 @@ CakePHP will auto-detect Memcached if configured in `app.php`:
 - [ ] Create product listing + filters
 - [ ] Develop cart and checkout flow
 - [ ] Admin dashboard for order and inventory management
+- [ ] Implement the multistore features
 - [ ] Integrate email notifications (orders, signups)
 
 ### 📌 Phase 3: Optimization
