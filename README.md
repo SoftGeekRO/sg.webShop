@@ -34,33 +34,39 @@ An advanced e-commerce web application for **SoftGeek**, built with modern techn
 ## 📂 Project Structure
 
 ```
+/bin
+/config
+/logs
+/plugins
+/resources
 /src
   /Controller
   /Model
   /Template
   /View
-/config
-/public
+/templates
+/test
+/tmp
+  /cache
+/vendor
+/weboot -> hard move or soft link to /var/www/webshop/weboot/
   /js
   /css
   /images
-/scripts
-/webpack
-/cache
 ```
 
 ---
 
 ## ⚙️ Requirements
 
-- PHP >= 8.4
-- CakePHP >= 5.2
+- PHP >= 8.3
 - Composer >= 2.8.0
-- Node.js + NPM >= 22.15.1
-- MariaDB >= 11.7.2
+- CakePHP >= 5.2
+- Node.js >= 22.15.x + NPM >= 10.9.x
+- MariaDB >= 11.7.2 || Mysql >= 8.0
 - Memcached >= 1.6.38
-- Nginx >= 1.28
-- webpack >= 5
+- Nginx >= 1.24
+- webpack >= 5.99
 - SASS >= 1.89.0
 
 ---
@@ -71,7 +77,7 @@ An advanced e-commerce web application for **SoftGeek**, built with modern techn
 
 ```bash
 git clone https://github.com/SoftGeekRO/sg.webShop.git
-cd online-store
+cd sg.webShop
 ```
 
 ### 2. Install PHP Dependencies
@@ -101,20 +107,6 @@ bin/cake migrations migrate
 ```bash
 npm install
 npm run build
-```
-
-For development:
-
-```bash
-npm run watch
-```
-
-### 6. Start Server
-
-Use Caddy, Apache, or PHP’s built-in server:
-
-```bash
-bin/cake server
 ```
 
 ---
@@ -198,5 +190,5 @@ This project is licensed under the **MIT License**.
 
 ## 🧠 About SoftGeek
 
-**SoftGeek** is a modern tech company focused on smart digital products and automation.  
+**SoftGeek** is a modern tech company focused on smart digital products and automation.
 Visit us at [https://softgeek.ro](https://softgeek.ro)
