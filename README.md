@@ -1,5 +1,16 @@
 # 🛍️ SoftGeek Online Store
 
+![License](https://img.shields.io/github/license/SoftGeekRO/sg.webShop)
+![PHP](https://img.shields.io/badge/PHP-%3E%3D8.3-blue)
+![CakePHP](https://img.shields.io/badge/CakePHP-5.0-red)
+![Code Style](https://img.shields.io/badge/code%20style-PSR--12-blue)
+![Size](https://img.shields.io/github/repo-size/SoftGeekRO/sg.webShop)
+![Build](https://img.shields.io/github/actions/workflow/status/SoftGeekRO/sg.webShop/ci.yml?branch=main)
+![Issues](https://img.shields.io/github/issues/SoftGeekRO/sg.webShop)
+![softgeek.ro](https://img.shields.io/website?url=https://softgeek.ro)
+![progeek.ro](https://img.shields.io/website?url=https://progeek.ro)
+
+
 An advanced e-commerce web application for **SoftGeek**, built with modern technologies including [CakePHP](https://cakephp.org/), [MariaDB](https://mariadb.org/), [Webpack](https://webpack.js.org/), JavaScript, and [Memcached](https://memcached.org/) for high-performance data caching.
 
 ---
