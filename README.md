@@ -11,7 +11,7 @@
 ![progeek.ro](https://img.shields.io/website?url=https://progeek.ro)
 
 
-An advanced e-commerce web application for **SoftGeek**, built with modern technologies including [CakePHP](https://cakephp.org/), [MariaDB](https://mariadb.org/), [Webpack](https://webpack.js.org/), JavaScript, and [Memcached](https://memcached.org/) for high-performance data caching.
+An advanced e-commerce web application for **SoftGeek**, built with modern technologies including [CakePHP](https://cakephp.org/), [MariaDB](https://mariadb.org/), [Webpack](https://webpack.js.org/), JavaScript.
 
 ---
 
@@ -24,7 +24,6 @@ An advanced e-commerce web application for **SoftGeek**, built with modern techn
 | Webpack    | Asset bundler for JavaScript/CSS           |
 | SCSS       | Professional grade CSS extension language  |
 | JavaScript | Interactive frontend                       |
-| Memcached  | In-memory caching to accelerate queries    |
 
 ---
 
@@ -75,7 +74,6 @@ An advanced e-commerce web application for **SoftGeek**, built with modern techn
 - CakePHP >= 5.2
 - Node.js >= 22.15.x + NPM >= 10.9.x
 - MariaDB >= 11.7.2 || Mysql >= 8.0
-- Memcached >= 1.6.38
 - Nginx >= 1.24
 - webpack >= 5.99
 - SASS >= 1.89.0
@@ -113,36 +111,6 @@ Create your MariaDB database and run migrations:
 bin/cake migrations migrate
 ```
 
-### 5. Install JS Dependencies & Build Assets
-
-```bash
-npm install
-npm run build
-```
-
----
-
-## 📦 Caching with Memcached
-
-Ensure Memcached is running:
-
-```bash
-memcached -d
-```
-
-CakePHP will auto-detect Memcached if configured in `app.php`:
-
-```php
-'Cache' => [
-    'default' => [
-        'className' => 'Cake\Cache\Engine\MemcachedEngine',
-        'servers' => ['127.0.0.1:11211'],
-        'duration' => '+1 hours',
-        'prefix' => 'softgeek_'
-    ]
-]
-```
-
 ---
 
 ## 🛠️ Development Path
@@ -168,7 +136,7 @@ CakePHP will auto-detect Memcached if configured in `app.php`:
 
 ### 📌 Phase 3: Optimization
 
-- [ ] Configure Memcached for caching views and queries
+- [ ] Configure caching views and queries
 - [ ] Enable Webpack production mode + asset versioning
 - [ ] Add image compression & CDN (optional)
 - [ ] Enable multi-language support (i18n)

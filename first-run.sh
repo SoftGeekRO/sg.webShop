@@ -88,14 +88,6 @@ if [[ "$ACTION" == "install" ]]; then
   install_database
 
   # ----------------------------
-  # 🧠 Memcached
-  # ----------------------------
-  echo "🔧 Installing Memcached..."
-  apt install -y memcached libmemcached-tools
-  systemctl enable memcached
-  systemctl start memcached
-
-  # ----------------------------
   # 🌐 Nginx + Certbot
   # ----------------------------
   echo "🔧 Installing Nginx (Debian default) and Certbot..."
@@ -130,10 +122,6 @@ elif [[ "$ACTION" == "uninstall" ]]; then
   echo "🧹 Removing MariaDB/MySQL..."
   apt purge -y mariadb-server mariadb-client mysql-server mysql-client && apt autoremove -y
   rm -rf /etc/mysql /var/lib/mysql
-
-  # Memcached
-  echo "🧹 Removing Memcached..."
-  apt purge -y memcached libmemcached-tools && apt autoremove -y
 
   # Nginx + Certbot
   echo "🧹 Removing Nginx and Certbot..."
