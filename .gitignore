@@ -200,3 +200,5 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/phpstorm,cakephp,jetbrains+all
+/config/app_local.php
+/.secrets/sec.txt
