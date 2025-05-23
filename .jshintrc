@@ -1,0 +1,66 @@
+{
+	"browser": true,
+	"esversion": 2021,
+	"node": true,
+	"globals": {
+		"console": true,
+		"process": false,
+		"import": true,
+		"VITE_": true
+	},
+
+	"curly": true,
+	"eqeqeq": true,
+	"forin": true,
+	"freeze": true,
+	"immed": true,
+	"latedef": "nofunc",
+	"noarg": true,
+	"nonbsp": true,
+	"nonew": true,
+	"plusplus": false,
+	"undef": true,
+	"unused": "vars",
+	"strict": "implied",
+
+	"asi": false,
+	"boss": false,
+	"debug": false,
+	"eqnull": true,
+	"evil": false,
+	"expr": false,
+	"funcscope": false,
+	"iterator": false,
+	"lastsemic": false,
+	"loopfunc": false,
+	"noyield": false,
+	"notypeof": false,
+	"shadow": "outer",
+	"sub": false,
+	"supernew": false,
+	"validthis": false,
+
+	"indent": 2,
+	"maxlen": 120,
+	"trailing": true,
+	"white": true,
+
+	"maxparams": 3,
+	"maxdepth": 3,
+	"maxstatements": 20,
+	"maxcomplexity": 10,
+	"maxerr": 50,
+
+	"predef": {
+		"define": false,
+		"VITE_APP": false
+	},
+
+	"bitwise": true,
+	"newcap": true,
+	"noempty": true,
+	"nocomma": true,
+	"nonstandard": false,
+	"singleGroups": false,
+	"varstmt": false
+}

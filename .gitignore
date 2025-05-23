@@ -203,3 +203,7 @@ fabric.properties
 /config/app_local.php
 /.secrets/sec.txt
 /.php-cs-fixer.cache
+
+# Ignore node
+package-lock.json
+node_modules/

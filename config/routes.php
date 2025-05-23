@@ -56,6 +56,24 @@ return function (RouteBuilder $routes): void {
          * to use (in this case, templates/Pages/home.php)...
          */
         $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('login/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('admin/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+
+
+        $builder->connect('/order', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/cartrecovery/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/product/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/costumer/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/page/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/banner/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/widget/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/mail/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/theme/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
+
+        $builder->connect('/settings/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/payment/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/shipping/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
+        $builder->connect('/newsletter/*', ['controller' => 'Pages', 'action' => 'display', 'home']);
 
         /*
          * ...and connect the rest of 'Pages' controller's URLs.
