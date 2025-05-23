@@ -145,8 +145,8 @@ server {
 
     include $NGINX_ERROR_PAGES;
 
-    ssl_certificate "$SSL_DUMMY_CERT";
-    ssl_certificate_key "$SSL_DUMMY_KEY";
+    ssl_certificate $SSL_DUMMY_CERT;
+    ssl_certificate_key $SSL_DUMMY_KEY;
 
     return 444;
 }
@@ -173,6 +173,7 @@ server {
 
   server_name $DOMAIN www.$DOMAIN;
   root $WEBROOT_PATH;
+  index index.php index.html;
 
   include $NGINX_ERROR_PAGES;
 
@@ -192,6 +193,7 @@ server {
 
   server_name $DOMAIN www.$DOMAIN;
   root $WEBROOT_PATH;
+  index index.php index.html;
 
   ssl_certificate $SSL_CERTIFICATE;
   ssl_certificate_key $SSL_CERTIFICATE_KEY;
